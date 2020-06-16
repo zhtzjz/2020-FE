@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+<input type="text" name="" id="input">
+<script src="./debounce.js"></script>
+
+<script>
+  const fn = function(e) {
+    console.log(e, this)
+  }
+  const fnDebounce = debounce(fn, 2000, true)
+  
+  document.getElementById('input').addEventListener('input', fnDebounce)
+
+  // const fnThrottle = throttle(fn, 2000)
+  // window.addEventListener('resize', fnThrottle)
+</script>
+
+</body>
+</html>
