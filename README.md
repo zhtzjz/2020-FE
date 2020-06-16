@@ -4,4 +4,4 @@
 
 * [深入理解回流和重绘](https://github.com/zhtzjz/2020fe/issues/1)
 
-* [函数节流和防抖]
+* [函数节流和防抖](https://github.com/zhtzjz/2020fe/issues/3)
