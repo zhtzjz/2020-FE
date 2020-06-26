@@ -12,6 +12,6 @@
 
 * [New的时候究竟做了什么？模拟实现](./src/new.js)
 
-* [创建对象的多种方式及优缺点](https://github.com/zhtzjz/2020fe/issues/7)
+* [创建对象的多种方式及优缺点](./src/createObject.js)
 
 * [继承的多种方式及优缺点](https://github.com/zhtzjz/2020fe/issues/8)
