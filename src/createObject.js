@@ -60,7 +60,7 @@ console.log(cavin instanceof Person)
 // }
 
 // 虽然用上述方法可以解决不同实例的同名函数是不相同的，
-// 但是在全剧作用域中定义的函数实际上只被某个对象调用，是不合理的
+// 但是在全局作用域中定义的函数实际上只被某个对象调用，是不合理的
 
 // # 原型模式
 // eslint-disable-next-line
@@ -108,10 +108,8 @@ person1.name = 'zh'
 
 // 如果constructor属性真的很重要,可以使用object.defineProperty
 
-function Person2(name, age) {
-  this.name = name
-  this.age = age
-}
+// eslint-disable-next-line
+function Person2() {}
 
 Person2.prototype = {
   sayName: function () {
