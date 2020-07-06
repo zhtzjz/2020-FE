@@ -93,25 +93,25 @@ console.log(subType2.__proto__)
 
 // 4.原型式继承
 
-function createObj(o) {
-  function Fn() {}
-  Fn.prototype = o
+// function createObj(o) {
+//   function Fn() {}
+//   Fn.prototype = o
 
-  return new Fn()
-}
+//   return new Fn()
+// }
 
 // 其实就是Object.create()的实现
 // 要求一个对象作为另一个对象的基础，然后再根据具体的需求对该对象进行增强
 // 缺点：
 // 如果传入的对象中有属性是引用类型的话，被所有创建出来的对象共享
 
-// 寄生组合继承
+// 5.寄生组合继承
 
-function SuperType3(params) {}
+// function SuperType3(params) {}
 
-function SubType3(params) {
-  SuperType3.call(this, params)
-}
+// function SubType3(params) {
+//   SuperType3.call(this, params)
+// }
 
-SubType3.prototype = createObj(SuperType3.prototype)
-SubType3.prototype.constructor = SubType3
+// SubType3.prototype = createObj(SuperType3.prototype)
+// SubType3.prototype.constructor = SubType3
